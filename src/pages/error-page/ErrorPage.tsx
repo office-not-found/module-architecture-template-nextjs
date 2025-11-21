@@ -2,7 +2,6 @@ import { ROUTES } from "@/shared/config/routes";
 import { Button } from "@/shared/ui";
 import Link from "next/link";
 import styles from "./errorPage.module.scss";
-import { useTransition } from "react";
 
 export interface ErrorPageProps {
     error: Error & { digest?: string };
@@ -11,7 +10,7 @@ export interface ErrorPageProps {
 
 export const ErrorPage = ({ error, reset }: ErrorPageProps) => {
     const errorMessage = error.message ?? "Something went wrong";
-    const [isPending, startTransition] = useTransition();
+
     return (
         <div className={styles["error-page"]}>
             <div className={styles["error-page__container"]}>
@@ -25,11 +24,7 @@ export const ErrorPage = ({ error, reset }: ErrorPageProps) => {
                     >
                         Home
                     </Button>
-                    <Button
-                        onClick={reset}
-                        className={styles["error-page__button"]}
-                        loading={isPending}
-                    >
+                    <Button onClick={reset} className={styles["error-page__button"]}>
                         Try again
                     </Button>
                 </div>
