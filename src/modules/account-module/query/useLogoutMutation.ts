@@ -23,4 +23,3 @@ export const useLogoutMutation = () => {
 
     return mutation;
 };
-

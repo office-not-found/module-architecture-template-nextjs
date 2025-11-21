@@ -8,7 +8,9 @@ export const fetchLogout = () =>
     instanceApi.get<void>("/auth/logoutAdmin").then((response) => response);
 
 export const fetchGetAllPermission = () =>
-        instanceApi.get<IPermissionItemResponse[]>("/permission").then((response) => response);
+    instanceApi
+        .get<IPermissionItemResponse[]>("/permission")
+        .then((response) => response);
 
 export const fetchGetSelf = () =>
     instanceApi.get<IUser>("/admin/get-me").then((response) => response);

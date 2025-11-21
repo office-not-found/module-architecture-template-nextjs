@@ -1,15 +1,13 @@
 {
-  "printWidth": 90,
-  "tabWidth": 4,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": false,
-  "quoteProps": "as-needed",
-  "trailingComma": "none",
-  "bracketSpacing": true,
-  "arrowParens": "always",
-  "endOfLine": "lf",
-  "plugins": ["prettier-plugin-organize-imports"]
+    "printWidth": 90,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "consistent",
+    "jsxSingleQuote": false,
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "endOfLine": "lf"
 }
-
-

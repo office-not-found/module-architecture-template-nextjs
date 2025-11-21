@@ -7,10 +7,14 @@ import { forwardRef } from "react";
 
 interface CustomButtonProps extends ButtonProps {}
 
-export const Button = createPolymorphicComponent<"button", CustomButtonProps>(
-    forwardRef<HTMLButtonElement, CustomButtonProps>(({ children, ...others }, ref) => (
+const ButtonBase = forwardRef<HTMLButtonElement, CustomButtonProps>(
+    ({ children, ...others }, ref) => (
         <ButtonFromLibUi {...others} ref={ref}>
             {children}
         </ButtonFromLibUi>
-    )),
+    ),
 );
+
+ButtonBase.displayName = "Button";
+
+export const Button = createPolymorphicComponent<"button", CustomButtonProps>(ButtonBase);

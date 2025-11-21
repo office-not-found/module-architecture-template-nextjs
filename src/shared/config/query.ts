@@ -7,8 +7,7 @@ export const enum EQueryKeys {
     ACCOUNT = "account",
 }
 
-const isAuthError = (error: unknown) =>
-    error instanceof ApiError && error.status === 401;
+const isAuthError = (error: unknown) => error instanceof ApiError && error.status === 401;
 
 export const queryClient = new QueryClient({
     defaultOptions: {
@@ -37,4 +36,3 @@ export const queryClient = new QueryClient({
         },
     },
 });
-

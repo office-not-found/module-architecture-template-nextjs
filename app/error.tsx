@@ -1,6 +1,6 @@
 "use client";
 
-import { ErrorPage, ErrorPageProps } from "@/pages/error-page";
+import { ErrorPage, type ErrorPageProps } from "@/pages/error-page";
 
 export default function Error(props: ErrorPageProps) {
     return <ErrorPage {...props} />;

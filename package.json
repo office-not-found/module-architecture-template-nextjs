@@ -1,66 +1,64 @@
 {
-  "name": "module-architecture-template-nextjs",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev -p 5173",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "prettier --write .",
-    "stylelint": "stylelint \"**/*.scss\"",
-    "stylelint:fix": "stylelint \"**/*.scss\" --fix",
-    "type-check": "tsc --noEmit",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@hookform/resolvers": "^5.1.1",
-    "@mantine/core": "^8.1.1",
-    "@mantine/hooks": "^8.1.1",
-    "@mantine/notifications": "^8.1.2",
-    "@tanstack/react-query": "^5.80.10",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.525.0",
-    "next": "^15.0.3",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-hook-form": "^7.58.1",
-    "zod": "^3.25.67",
-    "zustand": "^5.0.5"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.30",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@typescript-eslint/eslint-plugin": "^8.33.1",
-    "@typescript-eslint/parser": "^8.33.1",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^15.0.3",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.4.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "prettier": "^3.5.3",
-    "prettier-plugin-organize-imports": "^4.1.0",
-    "sass-embedded": "^1.89.1",
-    "stylelint": "^16.20.0",
-    "stylelint-config-clean-order": "^7.0.0",
-    "stylelint-config-standard-scss": "^14.0.0",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.30.1",
-    "typescript-plugin-css-modules": "^5.1.0"
-  },
-  "lint-staged": {
-    "src/**/*.ts?(x)": [
-      "eslint --cache --fix",
-      "prettier --write"
-    ],
-    "src/**/*.?(s)css": [
-      "prettier --write",
-      "stylelint \"**/*.scss\" --fix"
-    ]
-  }
+    "name": "module-architecture-template-nextjs",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev -p 5173",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "lint:fix": "next lint --fix",
+        "format": "prettier --write .",
+        "stylelint": "stylelint \"**/*.scss\"",
+        "stylelint:fix": "stylelint \"**/*.scss\" --fix",
+        "type-check": "tsc --noEmit",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@hookform/resolvers": "^5.1.1",
+        "@mantine/core": "^8.1.1",
+        "@mantine/hooks": "^8.1.1",
+        "@mantine/notifications": "^8.1.2",
+        "@tanstack/react-query": "^5.80.10",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.525.0",
+        "next": "^15.0.3",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0",
+        "react-hook-form": "^7.58.1",
+        "zod": "^3.25.67",
+        "zustand": "^5.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.30",
+        "@types/react": "^19.1.2",
+        "@types/react-dom": "^19.1.2",
+        "@typescript-eslint/eslint-plugin": "^8.33.1",
+        "@typescript-eslint/parser": "^8.33.1",
+        "eslint": "^8.57.1",
+        "eslint-config-next": "^15.0.3",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.4.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.5.2",
+        "prettier": "^3.5.3",
+        "prettier-plugin-organize-imports": "^4.1.0",
+        "sass-embedded": "^1.89.1",
+        "stylelint": "^16.20.0",
+        "stylelint-config-clean-order": "^7.0.0",
+        "stylelint-config-standard-scss": "^14.0.0",
+        "typescript": "~5.8.3",
+        "typescript-eslint": "^8.30.1",
+        "typescript-plugin-css-modules": "^5.1.0"
+    },
+    "lint-staged": {
+        "src/**/*.ts?(x)": [
+            "eslint --cache --fix",
+            "prettier --write"
+        ],
+        "src/**/*.?(s)css": [
+            "prettier --write",
+            "stylelint \"**/*.scss\" --fix"
+        ]
+    }
 }
-
-
