@@ -16,11 +16,6 @@
     outline: none;
 }
 
-a:focus,
-a:active {
-    outline: none;
-}
-
 nav,
 footer,
 header,
@@ -73,6 +68,11 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
 }
 
 ul li {
