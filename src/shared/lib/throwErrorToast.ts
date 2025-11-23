@@ -8,8 +8,6 @@ export const throwErrorToast = (error: unknown) => {
 
     if (error instanceof ApiError) {
         errorMessage = error.message || DEFAULT_MESSAGE;
-    } else if (error instanceof Error) {
-        errorMessage = error.message || DEFAULT_MESSAGE;
     }
 
     if (Array.isArray(errorMessage)) {
