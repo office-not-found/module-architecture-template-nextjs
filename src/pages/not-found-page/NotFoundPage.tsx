@@ -1,7 +1,7 @@
-import Link from "next/link";
-import styles from "./notFoundPage.module.scss";
 import { ROUTES } from "@/shared/config/routes";
 import { Button } from "@/shared/ui";
+import Link from "next/link";
+import styles from "./notFoundPage.module.scss";
 
 export const NotFoundPage = () => {
     return (

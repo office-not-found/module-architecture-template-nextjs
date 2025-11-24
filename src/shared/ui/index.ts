@@ -1,9 +1,9 @@
 export { Button } from "./button";
-export { TextInput } from "./text-input";
+export { Checkbox } from "./checkbox";
+export { Drawer } from "./drawer";
 export { LoaderOverlay } from "./loader-overlay";
 export { Modal } from "./modal";
-export { Select } from "./select";
-export { Checkbox } from "./checkbox";
-export { Tooltip } from "./tooltip";
-export { Drawer } from "./drawer";
 export { PasswordInput } from "./password-input";
+export { Select } from "./select";
+export { TextInput } from "./text-input";
+export { Tooltip } from "./tooltip";

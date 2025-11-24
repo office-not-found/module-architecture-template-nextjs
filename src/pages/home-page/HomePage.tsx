@@ -1,7 +1,7 @@
 "use client";
 
-import { Container, Title } from "@mantine/core";
 import { LogoutButton } from "@/modules/account-module/ui";
+import { Container, Title } from "@mantine/core";
 
 export const HomePage = () => {
     return (

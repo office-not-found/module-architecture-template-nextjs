@@ -1,6 +1,6 @@
-import styles from "./loginForm.module.scss";
-import { Button, PasswordInput, TextInput } from "@/shared/ui";
 import { useLoginForm } from "@/modules/account-module/lib";
+import { Button, PasswordInput, TextInput } from "@/shared/ui";
+import styles from "./loginForm.module.scss";
 
 export const LoginForm = () => {
     const { onSubmit, register, isPending, errors } = useLoginForm();

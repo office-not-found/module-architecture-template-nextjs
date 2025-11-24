@@ -1,11 +1,11 @@
 "use client";
 
-import type { ReactNode } from "react";
-import { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useGetSelfQuery } from "@/modules/account-module/query";
 import { ROUTES } from "@/shared/config/routes";
 import { LoaderOverlay } from "@/shared/ui";
-import { useGetSelfQuery } from "@/modules/account-module/query";
+import { usePathname, useRouter } from "next/navigation";
+import type { ReactNode } from "react";
+import { useEffect } from "react";
 
 const PUBLIC_ROUTES = [ROUTES.LOGIN];
 

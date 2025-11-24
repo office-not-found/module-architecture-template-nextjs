@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useMemo } from "react";
 import type { PartialURLParams } from "../model";
 
 type ExtractedParams<T extends readonly (keyof PartialURLParams)[] | undefined> =

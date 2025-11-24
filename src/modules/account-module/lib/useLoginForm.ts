@@ -1,8 +1,8 @@
-import { useForm } from "react-hook-form";
-import { useRouter } from "next/navigation";
-import { type TLoginData, type IUser, loginResolver, useAccountStore } from "../model";
-import { useLoginQuery } from "../query";
 import { ROUTES } from "@/shared/config/routes";
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import { type IUser, loginResolver, type TLoginData, useAccountStore } from "../model";
+import { useLoginQuery } from "../query";
 
 export const useLoginForm = () => {
     const router = useRouter();

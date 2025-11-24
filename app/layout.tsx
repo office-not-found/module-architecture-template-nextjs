@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import { AppProviders } from "@/app/providers/AppProviders";
 import "@/shared/config/theme/index.scss";
+import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {

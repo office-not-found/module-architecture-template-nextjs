@@ -1,9 +1,9 @@
+import { EQueryKeys } from "@/shared/config/query";
+import { ROUTES } from "@/shared/config/routes";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
 import { fetchLogout } from "../api";
 import { useAccountStore } from "../model";
-import { EQueryKeys } from "@/shared/config/query";
-import { ROUTES } from "@/shared/config/routes";
 
 export const useLogoutMutation = () => {
     const router = useRouter();

@@ -1,5 +1,5 @@
-import { customShowNotification } from "./customNotifications";
 import { ApiError } from "@/shared/api";
+import { customShowNotification } from "./customNotifications";
 
 const DEFAULT_MESSAGE = "Something went wrong";
 

@@ -1,6 +1,6 @@
 import { QueryClient } from "@tanstack/react-query";
-import { throwErrorToast } from "../lib";
 import { ApiError } from "../api";
+import { throwErrorToast } from "../lib";
 
 export const enum EQueryKeys {
     AUTH = "auth",

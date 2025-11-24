@@ -1,7 +1,7 @@
+import { EQueryKeys } from "@/shared/config/query";
 import { useQuery } from "@tanstack/react-query";
 import { fetchGetSelf } from "../api";
 import { useAccountStore } from "../model";
-import { EQueryKeys } from "@/shared/config/query";
 
 export const useGetSelfQuery = () => {
     const setAccount = useAccountStore((state) => state.setAccount);
